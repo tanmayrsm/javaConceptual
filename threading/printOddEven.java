@@ -1,9 +1,9 @@
 import java.util.*;
 
 class HelloWorld {
-    static class G {
+    static class PrintNumber {
         int  N;
-        G(int ct) {
+        PrintNumber(int ct) {
             N = ct;
         }
         public void even() {
@@ -37,12 +37,12 @@ class HelloWorld {
         
     }
     public static void main(String[] args) {
-        G amba = new G(20);
-        Thread eveni = new Thread(() -> amba.even());
-        Thread oddi = new Thread(() -> amba.odd());
+        PrintNumber p = new PrintNumber(20);
+        Thread evenPrinter = new Thread(() -> p.even());
+        Thread oddPrinter = new Thread(() -> p.odd());
         
-        oddi.start();
-        eveni.start();
-        System.out.println("Hello, World!");
+        oddPrinter.start();
+        evenPrinter.start();
+        System.out.println("Hello!");
     }
 }
