@@ -6,7 +6,6 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-// GOLDMAN SACHS - 4TH round question scenario - 4th Oct 2023
 public class nonBlocking_queue_and_blockingqueue_3 {
 
     // concurrent queues - provide non-blocking operations on add/remove from queue data structure
@@ -24,7 +23,8 @@ public class nonBlocking_queue_and_blockingqueue_3 {
         Queue<Integer> concurrentQueue = new ConcurrentLinkedQueue<>();
 
         // Using a blocking queue
-        BlockingQueue<Integer> blockingQueue = new ArrayBlockingQueue<>(NUM_ELEMENTS);
+        BlockingQueue<Integer> blockingQueue = new ArrayBlockingQueue<>(NUM_ELEMENTS);  // advantage of blocking queue, u can block operations, when queue is full
+
 
 
         // Run with synchronized queue
