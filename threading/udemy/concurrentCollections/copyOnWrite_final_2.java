@@ -1,5 +1,3 @@
-package udemy.concurrentCollections;
-
 
 import java.util.ArrayList;
 import java.util.Collections;

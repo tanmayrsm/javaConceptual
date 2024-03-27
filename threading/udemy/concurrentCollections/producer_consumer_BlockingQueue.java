@@ -3,7 +3,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 // GOLDMAN SACHS - 4TH round question scenario - 4th Oct 2023
 
-public class ProducerConsumerExample {
+public class producer_consumer_BlockingQueue {
     public static void main(String[] args) {
         // Creating a shared blocking queue with a capacity of 5
         BlockingQueue<Integer> sharedQueue = new LinkedBlockingQueue<>(5);

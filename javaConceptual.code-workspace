@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "hashcodeAndEquals"
+		},
+		{
+			"path": "streams"
+		},
+		{
+			"path": "threading"
+		},
+		{
+			"path": "../../../IRF-revision/RAT_cc_integration"
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true
+	}
+}

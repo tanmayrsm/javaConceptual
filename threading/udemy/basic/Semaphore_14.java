@@ -16,7 +16,7 @@ public class Semaphore_14 {
 
     // making no of resources - 
     private static Semaphore semaphore = new Semaphore(NO_OF_CORES_IN_MY_MACHINE, true);
-                                                      // permits no - NO OF CORES IN MY MACHINE
+                                                      // permits number - NO OF CORES IN MY MACHINE
                                                       // if permits == 1 -> semaphore acts like a normal LOCK        
     public static void main(String[] args) {
         System.out.println("No of cores available for my machine :: " + NO_OF_CORES_IN_MY_MACHINE);
@@ -58,6 +58,7 @@ public class Semaphore_14 {
             try {
                 try {
                     System.out.println("Doing useful work for thread  : " + Thread.currentThread().getId());
+                    // call API..
                     Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();

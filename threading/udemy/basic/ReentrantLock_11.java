@@ -7,6 +7,7 @@ public class ReentrantLock_11 {
     private static final Lock lock = new ReentrantLock();
     private static int counter = 0;
     
+    
     public static void main(String[] args) {
         start();   
     }
